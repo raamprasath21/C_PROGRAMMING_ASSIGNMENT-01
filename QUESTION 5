@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float mileage;
+    int petrol, distance;
+
+    scanf("%f %d %d", &mileage, &petrol, &distance);
+
+    float canTravel = mileage * petrol;
+
+    if(canTravel >= distance)
+        printf("Can reach");
+    else
+        printf("Cannot reach");
+
+    return 0;
+}

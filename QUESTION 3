@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int coins, x, y;
+    scanf("%d %d %d", &coins, &x, &y);
+
+    int longBen = (coins * x) / 100;
+    int remaining = coins - longBen;
+
+    int blackBeard = (remaining * y) / 100;
+    remaining -= blackBeard;
+
+    int eachPirate = remaining / 3;
+
+    printf("%d\n%d\n%d", longBen, blackBeard, eachPirate);
+    return 0;
+}

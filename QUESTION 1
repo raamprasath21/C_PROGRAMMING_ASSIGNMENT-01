@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int distance;
+    int member;
+    float fare = 100;
+
+    scanf("%d", &distance);
+    scanf("%d", &member);
+
+    if(distance > 10) {
+        fare += (distance - 10) * 20;
+    }
+
+    if(member == 1) {
+        fare = fare - (fare * 0.10);
+    }
+
+    printf("Final Fare: ₹%.0f", fare);
+    return 0;
+}

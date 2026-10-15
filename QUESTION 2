@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int answered, time, submitted;
+
+    scanf("%d %d %d", &answered, &time, &submitted);
+
+    if(submitted == 1)
+        printf("Submission Not Allowed");
+    else if(answered > 0 && time > 0)
+        printf("Submission Allowed");
+    else
+        printf("Submission Not Allowed");
+
+    return 0;
+}
